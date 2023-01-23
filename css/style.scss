@@ -1,0 +1,413 @@
+
+/*body {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}*/
+* {
+    box-sizing: border-box;
+}
+
+main {
+    width: 100%;
+    height: 4417px;
+    /*border: 3px solid red;*/
+}
+
+body {
+    background: linear-gradient(180deg, rgba(245, 245, 245, 0) 0%, #F5F5F5 51.56%, rgba(245, 245, 245, 0) 100%);
+  }
+  
+header {
+    /*width: 100vw;*/
+    width: 960px;
+    height: 115px;
+    margin-left: auto;
+    margin-right: auto;
+    //display: inline-block;
+    //padding: 1rem;
+    
+}
+
+.first_section aside {
+    position: absolute;
+    top: 40rem;
+    display: inline-block;
+    //border: 1px solid red;
+}
+/*Botones balncos y negro*/
+@mixin buttonColor($backColor,$fontColor){
+    border-radius: 10px;
+    background-color: $backColor;
+    color: $fontColor;
+    margin: 8px;
+    height: 32px;
+}
+
+.buttonBlack{
+    @include buttonColor(black,white)
+}
+.buttonWhite{
+    @include buttonColor(white,black )
+}
+
+
+.first_section{
+    width: 960px;
+    /*width: 100vw;*/
+    height: 840px;
+    /*left: 0px;*/
+    margin-left: auto;
+    margin-right: auto;
+    //margin-top: 116px;
+    //border: 1px solid red;
+
+
+    //height: 761px;
+    padding: 1rem;
+    justify-content: center;
+    text-align: center;
+    //border: 2px solid red;
+}
+
+.heading{
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    //border: 2px solid blue;    
+}
+
+.heading > div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;  
+    padding: 0 22px 0 22px;  
+}
+
+.titles > h2{
+    font-family: 'Abril Fatface', cursive;
+    font-size: xx-large;
+}
+
+.titles > span{
+    font-family: 'Raleway', sans-serif;
+}
+
+/*Iconos de redes sociales*/
+.social_icons{
+    height: 32px;
+    width: 32px;
+    color: black;
+    margin: 1rem;
+    display: block;
+}
+
+
+
+
+/* Sección 2 */
+.section-container {
+    /*position: absolute;*/
+    width: 960px;
+    height: 761px;
+    /*left: 0px;*/
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    //border: 1px solid red;
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.820101) 14.06%, rgba(0, 0, 0, 0.75) 37.19%, rgba(0, 0, 0, 0.75) 55.32%, rgba(255, 255, 255, 0.6454) 88.52%, #FFFFFF 97.7%);
+}
+
+video {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+
+    z-index: -1;
+}
+
+#sub-title {
+    /*position: absolute;*/
+    width: 470px;
+    height: 62px;
+    margin-left: 245px;
+
+    font-family: 'Abril Fatface';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 43px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #000000;
+    /*border: 1px solid blue;*/
+}
+
+.general-article-section {
+    width: 28rem;
+    height: 25rem;
+    /*border: 1px solid black;*/
+    display: inline-block;
+    margin-top: 5rem;
+    vertical-align: top;
+}
+
+.article1 {
+    padding: 1rem;
+    padding-left: 32px;
+}
+
+#piano-name {
+    /*position: absolute;*/
+    /*width: 218px;*/
+    width: 240px;
+    height: 32px;
+    /*margin-left: 32px;*/
+    /*top: 1188px;*/
+
+    font-family: 'Abril Fatface';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.05em;
+
+    color: #FFFFFF;
+    /*border: 1px solid black;*/
+}
+
+.article-div {
+    width: 30vh;
+    /*border: 1px solid green;*/
+    margin-top: 5rem;
+}
+
+.article-div p {
+    display: inline;
+    color: white;
+}
+
+.article-div img {
+    display: inline;
+}
+
+.button-section2 {
+    /*position: absolute;*/
+    width: 228px;
+    height: 32px;
+    /*margin-left: 32px;*/
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.05em;
+
+    background-color: #000000;
+    border-radius: 0.5rem;
+    color: #FFFFFF;
+}
+
+.general-article-section p {
+    /*margin-left: 32px;*/
+    color: white;
+}
+
+.general-article-section .article-div{
+    /*position: absolute;*/
+    margin-top: 1rem;
+    /*margin-right: 32px;*/
+}
+
+.imagenes-article2{
+    position: absolute;
+    width: 32vw;
+}
+
+#h3-precio {
+    /*margin-left: 32px;*/
+    font-family: 'Abril Fatface';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.05em;
+
+    color: #FFFFFF;
+}
+
+/*Sección 3*/
+
+
+.container {
+    
+    width: 960px;
+    height: 761px;
+    //margin-top: 1768px;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    //border: 1px solid red;
+    /*display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;*/
+  }
+  
+  h1 {
+     //position: absolute;
+     width: 470px;
+     height: 62px;
+     margin-left: 250px;
+     margin-top: 2rem;
+     margin-bottom: 10rem;
+     //top: 1849px;
+     font-family: "Abril Fatface";
+     font-style: normal;
+     font-weight: 400;
+     font-size: 32px;
+     line-height: 43px;
+     display: flex;
+     align-items: center;
+     text-align: center;
+     letter-spacing: 0.05em;
+    color: #000000;
+     //border: 1px solid blue;
+   }
+  
+   .art_left {
+//     position: absolute;
+  
+     //width: 250px;
+     width: 250px;
+     height: 239px;
+     //margin-left: 207px;
+     margin-left: 50px;
+//     top: 2083px;
+     color: black;
+     background: #FFFFFF;
+     //border: 1px solid red;
+     display: inline-block;
+  
+  
+//     /* shadow-cards */
+     box-shadow: 0px 28px 64px 12px rgba(0, 0, 0, 0.12);
+     border-radius: 8px;
+   }
+  
+   .art_center {
+//     position: absolute;
+  
+     width: 250px;
+     height: 239px;
+     margin-left: 50px;
+     //margin-left: 513px;
+//     top: 2083px;
+     background: #FFFFFF;
+     //border: 1px solid red;
+    display: inline-block;
+//     /* shadow-cards */
+     box-shadow: 0px 28px 64px 12px rgba(0, 0, 0, 0.12);
+     border-radius: 8px;
+   }
+  
+   .art_right {
+//     position: absolute;
+  
+     width: 250px;
+     height: 239px;
+       margin-left: 50px;
+//     top: 2083px;
+     background: #FFFFFF;
+     //border: 1px solid red;
+    display: inline-block;
+//     /* shadow-cards */
+     box-shadow: 0px 28px 64px 12px rgba(0, 0, 0, 0.12);
+     border-radius: 8px;
+   }
+  
+   .photo {
+     width: 90px;
+     height: 90px;
+     position: relative;
+     top: -95px;
+     margin-left: 20px;
+     border-bottom-style: dashed gray;
+  
+   }
+  
+   .texts {
+     margin-left: 15px;
+  
+   }
+  
+   span {
+     display: inline-block;
+   }
+
+   .button {
+     background: none;
+     width: 70%;
+     font-family: "Raleway";
+     font-size: 1rem;
+     font-weight: 600;
+     cursor: pointer;
+     padding: 5px 5px;
+     margin: 5px;
+     border-radius: 8px;
+     border: 1px solid black;
+  
+   }
+  
+   .btn_cart {
+        overflow: hidden;
+        background-position: center;
+        background-size: cover;
+        display: inline-block;
+  }
+
+.div-button-s3{
+
+    width: 100vw;
+    height: 4rem;
+    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+   // align-items: center;
+}
+
+   .btn {
+     //position: absolute;
+     width: 129px;
+     height: 32px;
+     margin-left: auto;
+     margin-right: auto;
+     //left: 577px;
+     //top: 2406px;
+     color: white;
+    background: #000000;
+     border-radius: 8px;
+     cursor: pointer;    
+   }
+
+   .imagen-carrito{
+    width: 3rem;
+    height: 3rem;
+    background-color: black;
+    display: inline-block;
+   }

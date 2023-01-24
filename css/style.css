@@ -1,4 +1,120 @@
 @charset "UTF-8";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+.contact-title {
+  text-align: center;
+}
+
+.contact {
+  background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0.35) 100%), url(../imagenes/contact-bg.png) no-repeat center center fixed;
+  background-size: cover;
+}
+
+.contact-text {
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 32px;
+}
+
+input,
+textarea.contact-form-input {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
+#container-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 600px;
+  padding: 20px;
+}
+
+.form-box {
+  width: 100%;
+  max-width: 400px;
+  padding: 30px 15px;
+  border-radius: 4px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.contact-form-label {
+  display: inline-block;
+  margin: 0.5rem 0;
+  margin: 2rem 0 2rem 0;
+  letter-spacing: 0.2px;
+  font-size: 1rem;
+}
+
+.contact-form-input {
+  width: 100%;
+  padding: 15px 10px;
+  border-radius: 4px;
+  outline: 0;
+}
+
+textarea.contact-form-input {
+  width: 100%;
+  min-height: 10ch;
+  max-height: 120ch;
+  padding: 10px;
+  resize: none;
+}
+
+.two-columns {
+  display: grid;
+  grid-template-columns: 100%;
+}
+
+fieldset {
+  border: none;
+}
+
+.btn-black {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  width: 100%;
+  margin-top: 10px;
+  padding: 15px;
+  border: none;
+  border-radius: 4px;
+  background-color: #000000;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  outline: none;
+}
+
+.btn-black::hover {
+  background-color: #fff;
+}
+
+@media screen and (min-width: 481px) {
+  .two-columns {
+    grid-template-columns: 48% 48%;
+    grid-column-gap: 4%;
+  }
+}
 /*body {
     width: 100vw;
     margin: 0;
@@ -240,6 +356,7 @@ video {
   flex-direction: row;
   justify-content: center;
   align-items: center;*/
+  background: linear-gradient(180deg, rgb(245, 245, 245) 0%, #F5F5F5 51.56%, rgba(245, 245, 245, 0) 100%);
 }
 
 h1 {
